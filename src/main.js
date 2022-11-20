@@ -12,7 +12,7 @@ function setCard(typeCard) {
   const colors = {
     visa: ["#0578A6", "#E4EEF2"],
     mastercard: ["#BF1120", "#F2AE30"],
-    default: ["black", "gray"],
+    default: ["#000", "#fff"],
   };
 
   ccBgColor01.setAttribute("fill", colors[typeCard][0]);
@@ -20,4 +20,4 @@ function setCard(typeCard) {
   ccLogo.setAttribute("src", `cc-${typeCard}.svg`);
 }
 
-setCard("mastercard");
+setCard("default");
